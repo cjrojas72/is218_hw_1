@@ -23,6 +23,7 @@
 	}
 
 	echo str_word_count($date)."<br>";
+	echo strlen($date)."<br>";
 
 	$year = array("2012", "396", "300","2000", "1100", "1089");
 	echo "The value of \$year: ";
