@@ -1,5 +1,12 @@
 <?php
 	$date =  date('Y/m/d', time());
+	$dateArr = explode('/', $date);
+
+	foreach ($dateArr as $key) {
+		echo "dateArr: $key".", ";
+	}
+	echo "<br>";
+
 	echo "The value of \$date: ".$date."<br>";
 	$tar = "2017/05/24";
 	echo "The value of \$tar: ".$tar."<br>";
