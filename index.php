@@ -13,6 +13,15 @@
 	else{
 		echo "Oops"."<br>"; 
 	}
+
+	$stcount = substr_count($date, '/');
+	echo $stcount."<br>";
+
+	if($stcount > 1){
+		$date = str_replace('/', " " , $date);
+		echo $date."<br>"; 
+	}
+
 	$year = array("2012", "396", "300","2000", "1100", "1089");
 	echo "The value of \$year: ";
 	print_r($year);
