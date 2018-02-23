@@ -37,4 +37,14 @@
 	$year = array("2012", "396", "300","2000", "1100", "1089");
 	echo "The value of \$year: ";
 	print_r($year);
+	echo "<br>"."Leap Year: "."<br>";
+
+	for($i=0; $i<count($year); $i++){
+		if($year[$i]%4 == 0 && ($year[$i] % 100 != 0 || $year[$i] % 400 == 0)){
+			echo $year[$i]." Leap Year: True <br>";
+		}
+		else{
+			echo $year[$i]." Leap Year: False <br>";
+		}
+	}
 ?>
